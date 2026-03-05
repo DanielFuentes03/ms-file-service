@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: file-service
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 52MB
+
+server:
+  port: 8082
+
+app:
+  jwt:
+    secret: ${APP_JWT_SECRET:cmVzcG9uc3lzLXNlY3JldC1rZXktMjAyNC1taW5pbXVtLTI1Ni1iaXRz}
+    expiration-ms: 86400000
+
+services:
+  data-service:
+    url: ${DATA_SERVICE_URL:http://localhost:8083}
+
+logging:
+  level:
+    com.responsys: DEBUG

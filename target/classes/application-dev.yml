@@ -1,0 +1,7 @@
+services:
+  data-service:
+    url: http://localhost:8083
+
+logging:
+  level:
+    com.responsys.file.parser: TRACE

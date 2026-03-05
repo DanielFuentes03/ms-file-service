@@ -1,0 +1,7 @@
+services:
+  data-service:
+    url: ${DATA_SERVICE_URL}
+
+logging:
+  level:
+    com.responsys: INFO
