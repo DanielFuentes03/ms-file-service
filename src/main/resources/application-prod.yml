@@ -2,6 +2,10 @@ services:
   data-service:
     url: ${DATA_SERVICE_URL}
 
+app:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:https://webapp-responsys-front-cuambsbfdbf8emh5.mexicocentral-01.azurewebsites.net}
+
 logging:
   level:
     com.responsys: INFO
